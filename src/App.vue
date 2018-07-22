@@ -16,6 +16,13 @@
         <Animation/>
         <DefineCMD/>
         <FilterDemo/>
+        <Loading/>
+        <DateTime/>
+        <DateTime1/>
+        <Upload/>
+        <AxiosGet/>
+        <AxiosGet1/>
+        <AxiosPost/>
         <img src="./assets/cat1.jpg"/>
     </div>
 </template>
@@ -37,6 +44,13 @@
     import Animation from './components/animation/Animation';
     import DefineCMD from './components/DefineCMD';
     import FilterDemo from './components/FilterDemo';
+    import Loading from './components/Loading';
+    import DateTime from './components/DateTime';
+    import DateTime1 from './components/DateTime1';
+    import Upload from './components/Upload';
+    import AxiosGet from './components/Axios/AxiosGet';
+    import AxiosGet1 from './components/Axios/AxiosGet1';
+    import AxiosPost from './components/Axios/AxiosPost';
     export default {
         name: 'App',
         components: {
@@ -54,7 +68,14 @@
             ComKeepAlive,
             Animation,
             DefineCMD,
-            FilterDemo
+            FilterDemo,
+            Loading,
+            DateTime,
+            DateTime1,
+            Upload,
+            AxiosGet,
+            AxiosGet1,
+            AxiosPost
         }
     }
 </script>
