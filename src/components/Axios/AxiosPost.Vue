@@ -12,6 +12,7 @@
             return {}
         },
         created(){
+            let url = this.HOST + '/sxtstu/blueberrypai/login.php';
             this.$axios.post('http://www.wwtliu.com/sxtstu/blueberrypai/login.php',{
                 user_id: "iwen@qq.com",
                 password: "iwen123",

@@ -9,7 +9,7 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir);
 }
 
-
+const vuxLoader = require('vux-loader');
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -66,7 +66,19 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-
+      {
+        test: /\.(scss|less)$/,
+        use: [{
+            loader: "style-loader", // creates style nodes from JS strings
+        }, {
+            loader: "css-loader" // translates CSS into CommonJS
+        }, {
+            loader: "sass-loader" // compiles Sass to CSS
+        },
+        {
+            loader: "less-loader" // compiles less to CSS
+        }]
+       }
     ]
   },
   node: {
@@ -91,3 +103,4 @@ module.exports = {
     ]
 
 };
+

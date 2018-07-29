@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <img src="./assets/cat.jpg">
-        <HelloWorld/>
+        <!--<img src="./assets/cat.jpg">-->
+       <!-- <HelloWorld/>
         <Users/>
         <VFor/>
         <ListennerEvent/>
@@ -23,7 +23,15 @@
         <AxiosGet/>
         <AxiosGet1/>
         <AxiosPost/>
-        <img src="./assets/cat1.jpg"/>
+        <NavList/>-->
+        <NavList1/>
+            <transition>
+                <keep-alive>
+                    <router-view></router-view>
+                </keep-alive>
+            </transition>
+
+       <!-- <img src="./assets/cat1.jpg"/>-->
     </div>
 </template>
 
@@ -51,10 +59,12 @@
     import AxiosGet from './components/Axios/AxiosGet';
     import AxiosGet1 from './components/Axios/AxiosGet1';
     import AxiosPost from './components/Axios/AxiosPost';
+    import NavList from './components/VueRouter/NavList';
+    import NavList1 from './components/VueRouter/NavList1';
     export default {
         name: 'App',
         components: {
-            HelloWorld,
+      /*      HelloWorld,
             Users,
             VFor,
             ListennerEvent,
@@ -75,19 +85,26 @@
             Upload,
             AxiosGet,
             AxiosGet1,
-            AxiosPost
+            AxiosPost,
+            NavList,*/
+            NavList1
         }
     }
 </script>
 
 <style scoped>
-    #app {
+  /*  #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
+    }*/
+
+    *{
+        margin: 0;
+        padding: 0;
     }
 
 </style>
